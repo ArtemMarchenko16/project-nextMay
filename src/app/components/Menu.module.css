@@ -1,0 +1,215 @@
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #111;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    height: 100%;
+    position: fixed;
+    bottom: -41px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.menuItem {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: #222;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menuItem:hover {
+    background-color: #333;
+}
+
+.settingsForUser {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+
+.account {
+    background-color: #ff7e5f;
+    color: black;
+    padding: 8px;
+    border-radius: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nickname {
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: #fff;
+    height: 100%;
+    margin-left: 200px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px; /* Відстань між пошуковим полем і кнопкою */
+}
+
+.searchBar {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.searchButton {
+    background-color: #595858;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.searchButton:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.moviesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Зменшено мінімальний розмір картинок */
+    gap: 16px; /* Простір між картинками */
+    flex-grow: 1;
+}
+
+.movieBlock {
+    background-color: #1e1e1e;
+    padding: 10px; /* Зменшено внутрішні відступи */
+    border: 1px solid #333;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Для правильного вирівнювання тексту */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.movieBlock:hover {
+    transform: scale(1.05);
+    background-color: #292929;
+}
+
+.movieBlock img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.movieBlock h3 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-decoration: 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.paginationButton {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.paginationButton:hover {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 150px;
+        position: absolute;
+        z-index: 1000;
+    }
+
+    .content {
+        margin-left: 150px;
+    }
+
+    .moviesGrid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+    }
+
+    .menuItem {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        margin-left: 0;
+    }
+
+    .moviesGrid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}

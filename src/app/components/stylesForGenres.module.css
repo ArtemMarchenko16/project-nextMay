@@ -1,0 +1,15 @@
+.settingsForTitle h2{
+    display: flex;
+    justify-content: center;
+}
+
+.genreBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.styleForText {
+    text-decoration: 0;
+    color: #fff;
+}
