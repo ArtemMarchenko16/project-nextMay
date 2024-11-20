@@ -4,7 +4,7 @@ import {MoviesPage} from "../components/MoviesPage";
 const Page = () => {
     return (
         <div>
-            <MoviesPage />
+            <MoviesPage/>
         </div>
     );
 };

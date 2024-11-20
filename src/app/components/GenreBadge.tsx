@@ -2,8 +2,8 @@ import React from 'react';
 
 import styles from "./stylesForGenres.module.css"
 import Link from "next/link";
-import {getDataFromAPI} from "../../../../../okten course/REACT January/finalProjectReact/project-next/src/app/services/api.service";
-import {IGenre} from "../../../../../okten course/REACT January/finalProjectReact/project-next/src/app/models/IGenre";
+import {getDataFromAPI} from "@/app/services/api.service";
+import {IGenre} from "@/app/models/IGenre";
 
 const GenreBadge = async () => {
     const response = await getDataFromAPI.genres.getGenres();
