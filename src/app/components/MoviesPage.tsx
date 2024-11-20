@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Menu.module.css";
-import PaginationComponent from "@/app/components/PaginationComponent";
-import MoviesList from "@/app/components/MoviesList";
+import PaginationComponent from "./PaginationComponent";
+import MoviesList from "./MoviesList";
 
 export const MoviesPage = async () => {
 

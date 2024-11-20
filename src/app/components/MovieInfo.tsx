@@ -1,6 +1,7 @@
 import React from 'react';
-import {IMovie} from "@/app/models/IMovie";
-import {getDataFromAPI} from "@/app/services/api.service";
+import {IMovie} from "../../../../../okten course/REACT January/finalProjectReact/project-next/src/app/models/IMovie";
+import {getDataFromAPI} from "../../../../../okten course/REACT January/finalProjectReact/project-next/src/app/services/api.service";
+
 
 type Params = Promise<{id:string}>
 const MovieInfo = async ({params} : {params: Params}) => {

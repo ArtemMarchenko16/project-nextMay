@@ -1,6 +1,7 @@
-import {IGenre} from "@/app/models/IGenre";
-import {IMovie} from "@/app/models/IMovie";
-import {baseURLForGetGenres, baseURLForGetMovies, options} from "@/app/urls/urls";
+
+import {baseURLForGetGenres, baseURLForGetMovies, options} from "../../../../../okten course/REACT January/finalProjectReact/project-next/src/app/urls/urls";
+import {IMovie} from "../models/IMovie";
+import {IGenre} from "../models/IGenre";
 
 export const getDataFromAPI = {
     movies: {

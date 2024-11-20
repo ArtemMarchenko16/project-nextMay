@@ -1,5 +1,5 @@
 import React from 'react';
-import GenreBadge from "@/app/components/GenreBadge";
+import GenreBadge from "../components/GenreBadge";
 
 const page = async () => {
 

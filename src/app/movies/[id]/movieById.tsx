@@ -1,5 +1,5 @@
 import React from 'react';
-import MovieInfo from "@/app/components/MovieInfo";
+import MovieInfo from "../../components/MovieInfo";
 
 
 type  Params  = Promise<{id:string}>

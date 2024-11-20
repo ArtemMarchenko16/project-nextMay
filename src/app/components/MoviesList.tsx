@@ -1,8 +1,9 @@
 import React from 'react';
-import styles from "@/app/components/Menu.module.css";
+import styles from "./Menu.module.css";
 import Link from "next/link";
-import {IMovie} from "@/app/models/IMovie";
-import {getDataFromAPI} from "@/app/services/api.service";
+import {getDataFromAPI} from "../../../../../okten course/REACT January/finalProjectReact/project-next/src/app/services/api.service";
+import {IMovie} from "../../../../../okten course/REACT January/finalProjectReact/project-next/src/app/models/IMovie";
+
 
 const MoviesList =  async () => {
 

@@ -1,4 +1,4 @@
-import {IMovie} from "@/app/models/IMovie";
+import {IMovie} from "./IMovie";
 
 export interface IResponseFnGetMovies {
     movies: IMovie[],

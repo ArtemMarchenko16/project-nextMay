@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "@/app/components/Menu.module.css";
+import styles from "./Menu.module.css";
 
 const UserInfo = () => {
     return (
