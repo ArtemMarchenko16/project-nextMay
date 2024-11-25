@@ -22,6 +22,7 @@ const GenreComponent =  ({params}: Params) => {
 
     return (
         <div>
+
             {
                 moviesByGenres.map(xxx => <div key={xxx.id}>{xxx.title}</div>)
             }

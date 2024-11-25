@@ -35,10 +35,15 @@ export const getDataFromAPI = {
             const data = await response.json();
             return data;
         },
-        getMoviesByGenres: async (id: number, page: number): Promise<IMovie[]> => {
-            const response = await fetch(`${baseURLForGetGenresById}${id}?page=${page}`, options);
+
+        // https://api.themoviedb.org/3/discover/movie?page=1&with_genres=10752
+        getMoviesByGenres: async (id: string, page: string): Promise<{ movies: IMovie[]; totalPages: number }> => {
+            const response = await fetch(`${baseURLForGetGenresById}?page=${page}&with_genres=${id}`, options);
             const data = await response.json();
-            return data.results || [];
+            return {
+                movies: data.results || [],
+                totalPages: data.total_pages || 0,
+            }
         }
 
 
