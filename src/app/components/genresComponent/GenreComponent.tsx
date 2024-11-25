@@ -4,27 +4,27 @@ import React, {useEffect, useState} from 'react';
 import {getDataFromAPI} from "@/app/services/api.service";
 import {IMovie} from "@/app/models/IMovie";
 
-type GenreComponentProps = {
-    genreId: string;
-    page: string;
-}
+type  Params  = Promise<{id:number}>
 
-const GenreComponent = ({genreId, page}: GenreComponentProps) => {
-    const [moviesByGenres, setMovies] = useState<IMovie[]>([]);
-
+const GenreComponent =  ({params}: Params) => {
+    const [moviesByGenres, setMovies] = useState<IMovie[]>([])
     useEffect(() => {
-        const fetchMovies = async () => {
-            const movies = await getDataFromAPI.genres.getMoviesByGenres(Number(genreId), Number(page));
-            console.log(movies);
-            setMovies(movies);
-        };
+        const lmf = async () => {
+            const getMovieId = await params;
+            const moviesByGenres:IMovie[] = await getDataFromAPI.genres.getMoviesByGenres(getMovieId.id);
 
-        fetchMovies();
-    }, [genreId, page]);
+            console.log(moviesByGenres);
+            setMovies(moviesByGenres)
+        }
+        lmf()
+
+    }, []);
 
     return (
         <div>
-            {moviesByGenres.map(xxx => <div key={xxx.id}>{xxx.title}</div>)}
+            {
+                moviesByGenres.map(xxx => <div key={xxx.id}>{xxx.title}</div>)
+            }
         </div>
     );
 };
