@@ -1,17 +1,10 @@
 import React from 'react';
-import GenreBadge from "../components/GenreBadge";
+import GenreInfo from "@/app/components/genresComponent/GenreInfo";
 
 const page = async () => {
-
-
-
-
     return (
         <div>
-            {
-
-            }
-            <GenreBadge/>
+            <GenreInfo/>
         </div>
     );
 };

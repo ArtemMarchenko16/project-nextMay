@@ -1,15 +1,39 @@
-.settingsForTitle h2{
-    display: flex;
-    justify-content: center;
+.genreBlock {
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 900px;
 }
 
-.genreBlock {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.genreGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.genreCard {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #333;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.genreCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .styleForText {
-    text-decoration: 0;
-    color: #fff;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.styleForText:hover {
+    color: #0070f3;
 }

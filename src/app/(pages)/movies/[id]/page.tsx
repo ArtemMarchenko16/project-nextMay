@@ -1,8 +1,8 @@
 import React from 'react';
-import MovieInfo from "../../components/MovieInfo";
+import MovieInfo from "../../../components/moviesComponent/MovieInfo";
 
 
-type  Params  = Promise<{id:string}>
+type  Params  = Promise<{id:number}>
 
 const DetailMoviePage = async ({params}:{params:Params} ) => {
 
