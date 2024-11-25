@@ -8,7 +8,7 @@ export const baseURLForGetGenresById = "https://api.themoviedb.org/3/discover/mo
 export const options =   {
     "method": "GET",
     headers: {
-        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMDA3NDQ1ZjE3MWJlM2FhNGNiODhkNTE1OGI1YmJkZSIsIm5iZiI6MTczMTcwNjk2MC4wMjg1OTg1LCJzdWIiOiI2NzM2MzEyYjE0M2U0MzlkYjRjNjY4OWYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.mBfuVRA8BWH-Kw7xIx-ekc4Zlb8Jfk1QNJ8ZC_Go5ek',
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMDA3NDQ1ZjE3MWJlM2FhNGNiODhkNTE1OGI1YmJkZSIsIm5iZiI6MTczMTc4OTI3My4yMzczNzUzLCJzdWIiOiI2NzM2MzEyYjE0M2U0MzlkYjRjNjY4OWYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.Wn400guarfdipjJc9NT5l9KHUsI7aZsC5aDfd7Mx_aM',
         'accept': 'application/json'
     }
 }

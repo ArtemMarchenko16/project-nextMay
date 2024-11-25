@@ -16,7 +16,7 @@ const GenreInfo = async () => {
                 <div className={styles.genreGrid}>
                     {genres.map((genre: IGenre) => (
                         <div className={styles.genreCard} key={genre.id}>
-                            <Link className={styles.styleForText} href={`/genres/${genre.id}?genre=${genre.name}`}>
+                            <Link className={styles.styleForText} href={`/genres/${genre.id}`}>
                                 <p>{genre.name}</p>
                             </Link>
                         </div>

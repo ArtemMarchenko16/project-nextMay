@@ -1,0 +1,16 @@
+.styleForPagination {
+    font-size: 14px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    background-color: #333;
+    z-index: 10;
+    border-radius: 8px;
+}

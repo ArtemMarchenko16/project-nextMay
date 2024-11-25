@@ -22,7 +22,7 @@ const PaginationComponent = ({ query = "", currentPage, totalPages }: Pagination
     return (
         <div>
             <Pagination
-                count={isSearch ? totalPages : 500}
+                count={totalPages || 500}
                 color="primary"
                 onChange={handlePageChange}
                 page={currentPage}
